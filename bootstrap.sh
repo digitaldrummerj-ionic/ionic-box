@@ -20,6 +20,7 @@ echo "PATH=\$PATH:~/android-sdk-linux/tools:~/android-sdk-linux/platform-tools" 
 
 npm install -g cordova
 npm install -g ionic
+
 expect -c '
 set timeout -1   ;
 spawn /home/vagrant/android-sdk-linux/tools/android update sdk -u --all --filter platform-tool,android-19,build-tools-19.1.0
@@ -29,4 +30,4 @@ expect {
 }
 '
 
-sudo gem install sass
+# sudo gem install sass
